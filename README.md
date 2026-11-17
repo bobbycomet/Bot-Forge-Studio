@@ -10,6 +10,8 @@ Unlike visual builders that primarily operate through hosted runtimes, Bot Forge
 
 **Visual development without sacrificing control over the software you create.**
 
+Concept of the node system is based off of [Conky Studio](https://github.com/bobbycomet/Conky-Studio)
+
 ---
 
 ## Why Bot Forge Studio?
