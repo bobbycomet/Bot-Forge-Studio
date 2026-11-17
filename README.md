@@ -68,7 +68,7 @@ Bot Forge Studio is primarily developed for Linux. The Linux version is provided
 
 The Windows version is offered as a convenience package, including a prebuilt portable ZIP and installer. It provides the same functionality as the Linux version, without requiring users to configure Python, install dependencies, or build the application themselves.
 
-Windows distribution is an additional maintenance and packaging commitment. The purchase supports that work and grants a license to use the Windows distribution. Redistribution is prohibited without explicit permission.
+Windows distribution is an additional maintenance and packaging commitment. The purchase supports that work and grants a license to use the Windows distribution. Redistribution is prohibited without explicit permission. Click here for the [Windows](https://ko-fi.com/s/0f440cdbac) version.
 
 ### Built on real development experience
 
