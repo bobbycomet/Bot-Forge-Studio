@@ -245,7 +245,7 @@ Bot Studio for Discord is an existing Windows application distributed through St
 | Generated source inspection | Yes | Not advertised |
 | SSH deployment | Yes | Not advertised |
 | Linux service management | Yes | Not advertised |
-| Windows support | Planned standalone EXE | Yes |
+| Windows support | standalone EXE on Ko-Fi | Yes |
 | Linux support | AppImage | Not listed |
 | Interactive development lessons | Yes | Documentation and community guides |
 | Plugin extensibility | Python and `.bsmod` | Community mods |
