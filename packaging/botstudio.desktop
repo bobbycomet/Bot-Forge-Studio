@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Bot Forge Studio
+GenericName=Discord Bot Builder
+Comment=Node-based IDE, compiler and lifecycle manager for Discord bots
+Exec=BotStudio %F
+Icon=botstudio
+Terminal=false
+Categories=Development;IDE;
+MimeType=application/x-bstudio;
+StartupWMClass=BotStudio
