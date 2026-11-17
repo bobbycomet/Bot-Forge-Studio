@@ -6,7 +6,7 @@ on:
     tags: ["v*"]                # pushing a tag like v1.0.0 also publishes a GitHub Release
 
 permissions:
-  contents: write              
+  contents: write               # needed only to attach files to a Release
 
 jobs:
   windows:
