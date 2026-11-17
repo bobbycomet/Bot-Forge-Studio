@@ -12,7 +12,7 @@ Unlike visual builders that primarily operate through hosted runtimes, Bot Forge
 
 Concept of the node system is based off of [Conky Studio](https://github.com/bobbycomet/Conky-Studio)
 
-[Windows](#Windows)
+[Windows](#Windows) version information
 
 ---
 
