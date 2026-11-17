@@ -6,19 +6,18 @@ on:
     tags: ["v*"]                # pushing a tag like v1.0.0 also publishes a GitHub Release
 
 permissions:
-  contents: write               # needed only to attach files to a Release
+  contents: write              
 
 jobs:
   windows:
     runs-on: windows-2022       # x64; the app runs on Windows 11 (the installer requires build 22000+)
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-          cache: pip
 
       - name: Install Inno Setup (installer builder)
         shell: pwsh
@@ -42,7 +41,7 @@ jobs:
             "$((Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower())  $($_.Name)"
           } | Out-File dist\SHA256SUMS.txt -Encoding ascii
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: BotForgeStudio-Windows11
           path: |
