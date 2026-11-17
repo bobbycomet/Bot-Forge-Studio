@@ -1,5 +1,9 @@
 # Bot Forge Studio
 
+<p align="center">
+<img width="300" height="300" alt="botstudio" src="https://github.com/user-attachments/assets/49e0a137-ef18-45f9-beca-ae5e5fb12b8b" />
+</p>
+
 ### Build with nodes. Generate real code. Deploy and manage your bots.
 
 **Bot Forge Studio** is a desktop node-based IDE, compiler, and lifecycle manager for Discord bots.
@@ -13,6 +17,13 @@ Unlike visual builders that primarily operate through hosted runtimes, Bot Forge
 Concept of the node system is based off of [Conky Studio](https://github.com/bobbycomet/Conky-Studio)
 
 [Windows](#Windows) version information
+
+<p align="center">
+<img width="800" height="800" alt="Screenshot_20261116_232255" src="https://github.com/user-attachments/assets/4837a2d2-71f6-4dcc-b420-aeba8b46538e" />
+<img width="800" height="800" alt="Screenshot_20261116_232151" src="https://github.com/user-attachments/assets/1a027a81-b390-43a8-8d7a-98bdda3b087b" />
+<img width="800" height="800" alt="Screenshot_20261116_232134" src="https://github.com/user-attachments/assets/7ec2b752-64c1-450a-aebd-8b37a1a2bb64" />
+<img width="800" height="800" alt="Screenshot_20261116_231934" src="https://github.com/user-attachments/assets/c425bb3e-aa00-4e3e-91a2-30aba08055c6" />
+</p>
 
 ---
 
