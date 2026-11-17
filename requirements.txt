@@ -1,0 +1,4 @@
+# Build/run requirements for Bot Forge Studio itself.
+# discord.py etc. are NOT needed here: they are installed into the bots Studio generates.
+PyQt6>=6.5
+pyinstaller>=6.0
