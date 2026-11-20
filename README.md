@@ -274,13 +274,16 @@ Bot Forge Studio is being distributed as a standalone desktop application.
 | Operating system | Format | Status |
 |---|---|---|
 | Linux | AppImage | <badge color="success">Build created</badge> |
+| macOS | `.app` ZIP | <badge color="warning">Build pipeline added; unsigned</badge> |
 | Windows | EXE | <badge color="warning">Planned</badge> |
 
 The Linux AppImage has already been created.
 
+The macOS app is built through **GitHub Actions** and can be used to develop bots locally and deploy them to remote Linux servers over SSH. The current build is unsigned and not notarized, so macOS may require manually allowing it to open. Signed and notarized distribution requires Apple Developer credentials.
+
 The Windows executable is planned to be built through **GitHub Actions**, providing an automated Windows build pipeline.
 
-Both distributions are intended to provide the same core development experience, with platform-specific functionality handled through the appropriate operating-system integrations.
+All distributions are intended to provide the same core development experience, with platform-specific functionality handled through the appropriate operating-system integrations.
 
 ---
 
