@@ -6,6 +6,7 @@ from PyInstaller.utils.hooks import collect_submodules
 
 ROOT = os.path.abspath(os.path.join(SPECPATH, ".."))
 IS_WIN = sys.platform.startswith("win")
+IS_MAC = sys.platform == "darwin"
 
 def _runtime_datas():
     out = []
@@ -74,3 +75,5 @@ exe = EXE(
     version=os.path.join(SPECPATH, "version_info.txt") if IS_WIN else None,
 )
 coll = COLLECT(exe, a.binaries, a.datas, name="BotStudio")
+if IS_MAC:
+    app = BUNDLE(coll, name="Bot Forge Studio.app", bundle_identifier="com.cometuxlabs.botforgestudio")

@@ -1,0 +1,45 @@
+name: Build macOS app
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Build and self-test
+        run: ./packaging/build_macos.sh
+
+      - name: Checksums
+        run: |
+          cd dist/macos
+          shasum -a 256 BotForgeStudio-*-macOS.zip > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v5
+        with:
+          name: BotForgeStudio-macOS
+          path: |
+            dist/macos/BotForgeStudio-*-macOS.zip
+            dist/macos/SHA256SUMS.txt
+          if-no-files-found: error
+
+      - name: Attach to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/macos/BotForgeStudio-*-macOS.zip
+            dist/macos/SHA256SUMS.txt
